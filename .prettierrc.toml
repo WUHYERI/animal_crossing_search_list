@@ -1,0 +1,17 @@
+printWidth = 80
+singleQuote = true
+semi = true
+useTabs = false
+tabWidth = 2
+trailingComma = 'all'
+arrowParens = 'always'
+proseWrap = 'preserve'
+quoteProps = 'consistent'
+bracketSameLine = false
+bracketSpacing = true
+htmlWhitespaceSensitivity = 'css'
+
+plugins = ['@trivago/prettier-plugin-sort-imports']
+importOrder = ['^[a-zA-Z]', '^@/(.*)$', '^[./]']
+importOrderSeparation = true
+importOrderSortSpecifiers = true
