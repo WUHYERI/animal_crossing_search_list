@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 
 import villagersData from '../data/Villagers.json';
 
+// import villagersData from '../data/test.json';
+
 export default function useVillagers() {
   const [villagers, setVillagers] = useState([]);
   const [loading, setLoading] = useState(true);
