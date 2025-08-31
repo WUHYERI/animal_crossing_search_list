@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Ace",
+    "species": "Bird",
+    "gender": "Male",
+    "personality": "Jock",
+    "hobby": "Nature",
+    "birthday": "8/11",
+    "catchphrase": "ace",
+    "favoriteSong": "K.K. Hop",
+    "favoriteSaying": "If you love something, let it go. Then chase it down. What were you thinking?",
+    "photoImage": "https://acnhcdn.com/latest/NpcBromide/NpcNmlBrd09.png"
+  },
+  {
+    "name": "Bella",
+    "species": "Cat",
+    "gender": "Female",
+    "personality": "Peppy",
+    "hobby": "Music",
+    "birthday": "1/5",
+    "catchphrase": "meow",
+    "favoriteSong": "K.K. Jazz",
+    "favoriteSaying": "Live for today!",
+    "photoImage": "https://acnhcdn.com/latest/NpcBromide/NpcNmlCat01.png"
+  }
+]
