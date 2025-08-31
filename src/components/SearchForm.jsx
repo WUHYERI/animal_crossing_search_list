@@ -4,23 +4,24 @@ export default function SearchForm({ searchText, setSearchText }) {
   };
 
   return (
-    <div className="search-bar m-2 ">
+    <div className="search-bar flex felx-col items-center m-2 max-w-[400px]">
       <form className="search flex flex-row gap-2" onSubmit={handleSubmit}>
         <label htmlFor="search" className="sr-only">
-          검색하셈
+          검색
         </label>
         <input
+          id="search"
           type="text"
           value={searchText}
           onChange={(evt) => {
             setSearchText(evt.target.value);
           }}
-          placeholder="검색하세요"
-          className="border-[1px] border-black rounded-xl w-80 h-9 pl-4"
+          placeholder="검색어를 입력하세요"
+          className="border-[1px] border-black rounded-xl w-auto h-9 pl-4"
         />
         <button
           type="submit"
-          className="flex flex-row items-center border-[1px] border-black rounded-xl pl-3"
+          className="flex flex-row grow-0 items-center border-[1px] border-black rounded-xl pl-3"
         >
           검색
           <svg
