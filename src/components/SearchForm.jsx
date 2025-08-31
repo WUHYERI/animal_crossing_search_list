@@ -1,15 +1,22 @@
-// 음
-export default function SearchForm() {
+export default function SearchForm({ searchText, setSearchText }) {
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+  };
+
   return (
     <div className="search-bar m-2 ">
-      <form className="search flex flex-row gap-2">
+      <form className="search flex flex-row gap-2" onSubmit={handleSubmit}>
         <label htmlFor="search" className="sr-only">
           검색하셈
         </label>
         <input
           type="text"
+          value={searchText}
+          onChange={(evt) => {
+            setSearchText(evt.target.value);
+          }}
           placeholder="검색하세요"
-          className="border-[1px] border-black rounded-xl w-80 h-9"
+          className="border-[1px] border-black rounded-xl w-80 h-9 pl-4"
         />
         <button
           type="submit"
